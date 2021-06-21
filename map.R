@@ -36,10 +36,10 @@ validMap <- validMap %>% filter(value > 1000)
 # nvazips <- rename(nvazips, region = ZIP.Code, value=Population)
 
 # data(df_pop_zip)
-zip_choropleth(validMap,
+zip_choropleth(validMap, 
                state_zoom = "virginia",
-               title      = "2012 New York State ZCTA Population Estimates",
-               legend     = "Population")
+               title      = "VTA ",
+               legend     = "Revenue")
 
 
 
@@ -111,7 +111,7 @@ zip.plot(murljobs, map.type = "state", region = "maryland")
 zip.plot(validMap, map.type = "state", region = "maryland")
 
 zip_choropleth(validMap, 
-               map.type   = "county"
+               map.type   = "state",
                state_zoom = "virginia", 
                title      = "2012 ZCTA Population Estimates",
                legend     = "Population")
